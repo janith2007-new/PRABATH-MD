@@ -15,7 +15,7 @@ const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
 const fs = require('fs')
 var videotime = 6000000 // 1000000min
-var dlsize = 17000 // 1700mb
+var dlsize = 1700 // 1700mb
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",

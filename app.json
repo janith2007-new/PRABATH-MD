@@ -87,6 +87,12 @@
     "description": "QR කේතය ස්කැන් එකෙන් ආපු Code එක දාන්න "
 
   },
+  
+     "BOTCAHX_API": {
+
+    "description": "BOTCAHX_API_KEY එක ඇතුලත් කරන්න   මෙම Site එකෙන් ලබා ගත හැක   https://api.botcahx.biz.id/signup "
+
+  },
 
     "OPENAI_API_KEY": {
 

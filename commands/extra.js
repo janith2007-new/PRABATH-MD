@@ -7,22 +7,52 @@
  * @project_name : Secktor-Md
  * @author : SamPandey001 <https://github.com/SamPandey001>
  * @description : Secktor,A Multi-functional whatsapp bot.
- * @version 0.0.6
- *
- */
+ /*
 
-const {cmd} = require('../lib')
-const PastebinAPI = require("pastebin-js");
-pastebin = new PastebinAPI("EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL");
+const { fetchJson, cmd, citel } = require('../lib')
+
 cmd({
-        pattern: "pastebin",
-        desc: "To check ping",
-        category: "general",
-        filename: __filename,
-    },
-    async(Void, citel) => {
-        if(!citel.quoted) return citel.reply('Please quote any text to get link.')
-        let data = await pastebin.createPaste(citel.quoted.text, "Secktor-Pastebin")
-        citel.reply('_Here is your link._\n'+data)
-    }
-);
+
+            pattern: "ss",
+
+            desc: "web ss",
+
+            
+
+            react: "📸",
+
+            category: "downloader"
+
+            
+
+            
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const webss = await fetchJson(`https://api.botcahx.biz.id/api/tools/ssweb?link=${text}&apikey=${Config.botapikey}`)
+
+            citel.reply (`*Screenshot is taking, please wait...*`)
+
+       Void.sendMessage(citel.chat, {
+
+                image: {
+
+                    url: `https://api.botcahx.biz.id/api/tools/ssweb?link=${text}&apikey=${Config.botapikey}` ,
+
+                },
+
+                caption: `● ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+ }
+
+)

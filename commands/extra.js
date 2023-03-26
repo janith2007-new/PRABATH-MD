@@ -1,5 +1,5 @@
 
-const { fetchJson, cmd, citel } = require('../lib')
+const { fetchJson, cmd, citel, Config } = require('../lib')
 
 cmd({
 
@@ -36,6 +36,54 @@ const webss = await fetchJson(`https://api.botcahx.biz.id/api/tools/ssweb?link=$
                 },
 
                 caption: `● ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ`,
+
+            }, {
+
+                quoted: citel,
+
+            });
+
+ }
+
+)
+
+
+
+cmd({
+
+            pattern: "fb",
+
+            desc: "fb down",
+
+            
+
+            react: "📥",
+
+            category: "downloader"
+
+        },
+
+        async(Void, citel, text) => {
+
+            if (!text) return
+
+const fbdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/fbdown?url=${text}&apikey=${Config.botapikey}`)
+
+const videolink = fbdl.result.HD
+
+            citel.reply (`*Finding Your Facebook Video* 🌐📡`);
+
+       Void.sendMessage(citel.chat, {
+
+                video: {
+
+                    url: videolink ,
+
+                },
+
+                caption: `● ᴘᴏᴡᴇʀᴅ ʙʏ ᴘʀᴀʙᴀᴛʜ-ᴍᴅ`,
+
+                footer: `tlang().footer`,
 
             }, {
 

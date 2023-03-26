@@ -61,7 +61,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return
-const ttdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/tikok?url=${text}&apikey=818f5a7d`)
+const ttdl = await fetchJson(`https://api.botcahx.biz.id/api/dowloader/tikok?url=${text}&apikey=${Config.botapikey}`)
     
 const videolink = ttdl.result.video2
             citel.reply (`*Finding Your Tiktok Video* 🌐📡`);

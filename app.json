@@ -18,7 +18,7 @@
 
   "description": "BOT ට එන්න ඕන නම දෙන්න ",
 
-      "value": "👨‍💻 PRABATH-MD-WA-BOT 👨‍💻"
+      "value": "ᴍͥ ʀ  ᴊ ᴀᷧɴⷨ ɪ ⁰⁰⁶ 🕵🏻‍♂️🔨"
 
   },
 
@@ -44,7 +44,7 @@
 
      "value": "chat.whatsapp.com",
 
-     "required" :false
+     "required" :true
 
     },
 
@@ -78,13 +78,13 @@
 
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
 
-       "value": "94762280384"
+       "value": "94727785006"
 
   },
 
    "SESSION_ID": {
 
-    "description": "QR කේතය ස්කැන් එකෙන් ආපු Code එක දාන්න "
+    "description": "PRABATH-MD::UFJBQkFUSC1NRDo6c2Vzc2lvbl9yYV8xNmY5YjZiZGI3ZWQwMV92aTo6SW5ub2NlbnRNYXJnaW5zCjo6MTA2NmUyMzQ4MWRhZDk1YjBmNjRiNWNmMWJlOA=="
 
   },
   
@@ -124,7 +124,7 @@
 
     "description": "මෙය වෙනස් නොකරන්න ",
 
-     "value": "PRABATH-MD"
+     "value": "ᴍͥ ʀ  ᴊ ᴀᷧɴⷨ ɪ ⁰⁰⁶ 🕵🏻‍♂️🔨-MD"
 
   },
 
@@ -140,7 +140,7 @@
 
     "description": "Put packname;authorname.",
 
-     "value": "PRABATH-MD🎊;𝚙𝚛𝚊𝚋𝚊𝚝𝚑✅",
+     "value": "ᴍͥ ʀ  ᴊ ᴀᷧɴⷨ ɪ ⁰⁰⁶ 🕵🏻‍♂️🔨🎊;ᴍͥ ʀ  ᴊ ᴀᷧɴⷨ ɪ ⁰⁰⁶ 🕵🏻‍♂️🔨✅",
 
      "required": false 
 
